@@ -6,7 +6,8 @@
 
 
 
-.navbar-brand {
+.navbar-brand,
+.text-header h1 {
     font-family: 'Sacramento', cursive;
 }
 
@@ -70,6 +71,7 @@
 .text-header {
     width: 60%;
     text-align: center;
+    color: #fff;
 }
 
 .text-header h1 {
@@ -126,23 +128,28 @@
 }
 
 .three {
-    left: 1000px;
+    left: 1123px;
     bottom: -150px;
 }
 
 .four {
-    left: 1120px;
+    left: 1000px;
     bottom: -90px;
 }
 
 .five {
-    left: 230px;
-    bottom: -95px;
+    left: 320px;
+    bottom: -85px;
 }
 
 .six {
     top: 370px;
     left: 110px;
+}
+
+.seven {
+    left: 125px;
+    bottom: -120px;
 }
 
 .img-learnings {
@@ -267,4 +274,5 @@
 .social-media i {
     font-size: 2em;
     margin: auto .5em;
+    cursor: pointer;
 }
