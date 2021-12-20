@@ -32,7 +32,9 @@
 
 
 
-
+.navbar {
+    padding: auto 1em;
+}
 
 .navbar-brand {
     width: 100%;
@@ -97,6 +99,10 @@
     color: #fff;
 }
 
+.activity-main {
+    display: flex;
+}
+
 .card-main:hover {
     transform: translateY(10px);
     transition: .2s .2s;
@@ -113,7 +119,8 @@
 
 
 .learnings {
-    padding-top: 10em;
+    padding-top: 8em;
+    padding-bottom: 5em;
     position: relative;
 }
 
@@ -122,34 +129,34 @@
     position: absolute;
 }
 
+
 .two {
-    top: 380px;
-    left: 510px;
+    top: 400px;
+    left: 90px;
 }
 
 .three {
-    left: 1123px;
-    bottom: -150px;
+    top: 450px;
+    left: 510px;
 }
 
 .four {
     left: 1000px;
-    bottom: -90px;
+    bottom: 90px;
 }
 
 .five {
     left: 320px;
-    bottom: -85px;
+    bottom: 12px;
 }
 
 .six {
-    top: 370px;
-    left: 110px;
+    left: 800px;
 }
 
 .seven {
-    left: 125px;
-    bottom: -120px;
+    left: 60px;
+    bottom: 80px;
 }
 
 .img-learnings {
@@ -184,6 +191,8 @@
 
 .graduate-box {
     width: 40%;
+    margin-top: 1em;
+    display: flex;
     background-color: #fff;
     border: .5px solid black;
 }
@@ -209,7 +218,7 @@
 .pricing {
     padding-top: 4.5em;
     padding-bottom: 5em;
-    background-image: conic-gradient(rgb(9, 120, 194) 117deg, white 117deg, white 293deg, rgb(9, 120, 194) 293deg);
+    background-image: conic-gradient(rgb(9, 120, 194) 116deg, white 116deg, white 297deg, rgb(9, 120, 194) 297deg);
 }
 
 .text-price {
@@ -268,6 +277,7 @@
 }
 
 .footer-bottom {
+    display: flex;
     justify-content: space-around;
 }
 
@@ -275,4 +285,101 @@
     font-size: 2em;
     margin: auto .5em;
     cursor: pointer;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 422px) {
+
+    .header,
+    .footer-bottom,
+    .img-graduate-head {
+        display: block;
+    }
+
+
+    .navbar-brand {
+        width: 0;
+        padding-left: .5em;
+    }
+
+
+
+
+    .header {
+        padding: 2em 1em;
+    }
+
+    .img-header {
+        width: 90%;
+    }
+
+    .text-header {
+        padding-top: 1em;
+        width: 100%;
+    }
+
+    .activity-main {
+        display: grid;
+    }
+
+    .card-main img {
+        height: 150px;
+    }
+
+
+
+
+    .img-learnings {
+        display: none;
+    }
+
+    .two {
+        top: 360px;
+        left: 70px;
+    }
+
+    .three {
+        top: 380px;
+        left: 310px;
+    }
+
+    .four {
+        left: 250px;
+        bottom: 0;
+    }
+
+    .five {
+        left: 70px;
+        bottom: 0;
+    }
+
+    .six {
+        left: 340px;
+    }
+
+    .seven {
+        left: 40px;
+        bottom: 100px;
+    }
+
+    .graduate-box {
+        width: 100%;
+        /* margin-top: 1em; */
+        justify-content: space-between;
+    }
+
+    .text-graduate {
+        text-align: center;
+        margin: auto;
+    }
+
+    .text-graduate h5 {
+        font-size: 15px;
+    }
+
+    .social-media i {
+        margin: 20px 10px;
+    }
 }
